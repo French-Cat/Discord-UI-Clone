@@ -1,5 +1,5 @@
 function randomAvi() {
-  return `imgs/avatars/${Math.floor(Math.random() * 6)}.png`
+    return `imgs/avatars/${Math.floor(Math.random() * 6)}.png`;
 }
 function openModal() {
     const modal = document.querySelector("#modal");
@@ -20,20 +20,21 @@ window.addEventListener("keydown", (event) => {
     console.log(event);
 });
 {
-var arr = document.getElementsByClassName("img")
-arr = [].slice.call(arr);
-arr.forEach(e => {
-    e.src = randomAvi()
-})
+    var arr = document.getElementsByClassName("img");
+    arr = [].slice.call(arr);
+    arr.forEach((e) => {
+        e.src = randomAvi();
+    });
 }
 {
-    var arr = document.getElementsByClassName("guild")
+    var arr = document.getElementsByClassName("guild");
     arr = [].slice.call(arr);
-    arr.forEach(e => {
-        if(Math.floor(Math.random() * 1001) > 500) {
-            if (e.classList.contains("home")) {} else {
-            e.classList.toggle("unread")
+    arr.forEach((e) => {
+        if (Math.floor(Math.random() * 1001) > 500) {
+            if (e.classList.contains("home")) {
+            } else {
+                e.classList.toggle("unread");
+            }
         }
-    }
-    })
+    });
 }
